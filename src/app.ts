@@ -29,7 +29,7 @@ app.get('/', (req: Request, res: Response) => {
 
 
 // All module routes
-app.use('/api', moduleRoutes);
+app.use(moduleRoutes);
 
 app.use(notFound);
 app.use(globalErrorHandler);
